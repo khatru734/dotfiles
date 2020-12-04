@@ -20,6 +20,13 @@ set clipboard=unnamed
 " Options that affect only YAML files:
 autocmd FileType yaml setlocal ai ts=2 sw=2 et nu cuc cul
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+
 " Vim Plug
 call plug#begin('~/.vim/plugged')
 
