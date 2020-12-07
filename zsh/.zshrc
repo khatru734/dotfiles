@@ -143,8 +143,15 @@ source $ZSH/oh-my-zsh.sh
  alias rl='exec zsh'
  alias weather='curl wttr.in'
  alias rgn='ranger'
-# open macvim instead of default vim
+
+# Vim aliases 
+
+#Point vim to MacVim
 alias vim='/usr/local/Cellar/macvim/8.2-166_1/bin/vim'
+
+# Open YAML files in Vim automatically. No need to even type vim first!
+
+alias -s {yml,yaml}=vim
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
