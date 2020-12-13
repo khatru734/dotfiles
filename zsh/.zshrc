@@ -143,7 +143,7 @@ source $ZSH/oh-my-zsh.sh
  alias rl='exec zsh'
  alias weather='curl wttr.in'
  alias rgn='ranger'
-
+ alias tree='tree -C'
 # Vim aliases 
 
 #Point vim to MacVim
