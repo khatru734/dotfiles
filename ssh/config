@@ -1,11 +1,12 @@
-Host cpcwiki
 
-	HostName wiki.coastprt.com
+
+Host cpcwiki
 	User jerry
+	HostName wiki.coastprt.com
 	IdentityFile ~/.ssh/keys/coastprt-wiki/coastprt-wiki.key
 
-Host cpczabbix
 
-	HostName zabbix.coastprt.com
+Host cpczabbix
 	User jerry
+	HostName zabbix.coastprt.com
 	IdentityFile ~/.ssh/keys/coastprt-zabbix/coastprt-zabbix
