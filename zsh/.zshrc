@@ -88,7 +88,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(docker docker-compose git)
-plugins=(git vi-mode ansible zsh-autosuggestions zsh-syntax-highlighting bgnotify)
+plugins=(git docker vi-mode ansible zsh-autosuggestions zsh-syntax-highlighting bgnotify)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -154,7 +154,10 @@ source $ZSH/oh-my-zsh.sh
 # Vim aliases 
 
 #Point vim to MacVim
-alias vim='/usr/local/Cellar/macvim/8.2-166_1/bin/vim'
+alias vim='/usr/local/Cellar/macvim/8.2-166_2/bin/vim'
+
+# Flush DNS resolver cache
+alias flushdns='sudo killall -HUP mDNSResponder'
 
 # Open YAML files in Vim automatically. No need to even type vim first!
 
